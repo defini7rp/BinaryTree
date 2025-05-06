@@ -2,6 +2,7 @@
     "files.associations": {
         "ios": "cpp",
         "xiosbase": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "iosfwd": "cpp"
     }
 }

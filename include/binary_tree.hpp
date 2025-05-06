@@ -73,8 +73,6 @@ public:
     size_t get_height();
     size_t get_height(Node* node);
 
-    friend std::ostream& operator<<(std::ostream&, const BinaryTree&);
-
 public:
     Node* root = nullptr;
 
@@ -267,8 +265,6 @@ size_t BinaryTree<T>::get_height()
 template<class T>
 size_t BinaryTree<T>::get_height(Node* node)
 {
-    // TODO: FIX it
-
     if (!node)
         return 0;
 
@@ -383,12 +379,6 @@ template <class T>
 void BinaryTree<T>::remove(Node*& node, T value)
 {
     while (delete_node(&node, value));
-}
-
-template <class T>
-std::ostream& operator<<(std::ostream& os, const BinaryTree<T>& tree)
-{
-    // TODO: print tree
 }
 
 #endif
